@@ -1,0 +1,135 @@
+/* Ajustes generales */
+html, body {
+    background-color: #a81d2f;
+    font-size: 100%;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden; /* Evita scroll horizontal */
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+p {
+    font-family: 'Passion One', sans-serif;
+    color: #5c101a;
+    text-align: center;
+}
+/* Asegurar que el título se ajuste */
+h1 {
+    font-family: 'Passion One', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 5vw; /* Usa porcentaje de la pantalla en lugar de un tamaño fijo */
+    margin-top: 10vw;
+}
+
+/* Botón grande */
+#YES {
+    display: block; /* Cambiar de inline-block a block para ocupar todo el ancho */
+    width: 100%; /* Adaptarlo a la pantalla */
+    max-width: 300px; /* Limitar su tamaño máximo */
+    margin: auto;
+    padding: 15px; /* Reducir padding para que no sea demasiado grande */
+    font-size: 3em; /* Reducir tamaño en móviles */
+    background-color: #ff7788;
+    color: white;
+    font-family: 'Passion One', sans-serif;
+    border: #9a2736 solid 2px;
+    border-radius: 40px;
+    font-size: 5em;
+    cursor: pointer;
+    box-shadow: 0 9px #9a2736;
+    
+}
+#YES:hover {
+    background-color: #ff7788;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* Botón pequeño */
+#NO {
+    width: 100%; /* En móviles ocupará el 40% del ancho */
+    max-width: 100px;
+    font-size: 1.2em;
+    background-color: #ff7788;
+    color: white;
+    font-family: 'Passion One', sans-serif;
+    border: #9a2736 solid 2px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 3px #9a2736;
+}
+#NO:hover {
+        background-color: #ff7788;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+#NO:active {
+        background-color: #ff7788;
+        box-shadow: 0, 5px, #666;
+        transform: translateY(4px);
+    }
+
+#YES:active {
+    background-color: #ff7788;
+    box-shadow: 0, 5px, #666;
+    transform: translateY(4px);
+}
+
+/* Caja contenedora */
+.box-container {
+    display: flex;
+    flex-direction: column; /* Alinear verticalmente en móviles */
+    align-items: center;
+    gap: 20px; /* Reducir espacio en móviles */
+    padding: 40px;
+    width: 90%; /* Ocupar casi toda la pantalla */
+    max-width: 400px;
+    background-color: #d43744;
+    border: #771e2a solid 2px;
+    margin: auto;
+    padding: 75px;
+    width: 500px;
+    border-radius: 30px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+
+/* Pie de página */
+footer {
+    width: 100%;
+    font-size: 3vw; /* Ajustar tamaño del texto */
+    padding: 10px;
+    background-color: #771e2a;
+    text-align: center;
+    color: rgb(228, 163, 163);
+    font-family: 'Passion One', sans-serif;
+}
+
+/* 📱 Estilos específicos para pantallas menores a 600px */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 10vw;
+    }
+    
+    #YES {
+        font-size: 2.5em;
+        padding: 10px;
+    }
+
+    #NO {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .box-container {
+        padding: 20px;
+        gap: 10px;
+    }
+}
